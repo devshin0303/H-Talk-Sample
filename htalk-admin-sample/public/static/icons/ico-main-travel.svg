@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="200" viewBox="0 0 240 200">
+    <defs>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fb0"/>
+            <stop offset="1" stop-color="#ffe200"/>
+        </linearGradient>
+        <style>
+            .cls-2,.cls-7{fill:none}.cls-2{stroke:#ffce00;stroke-width:4px}.cls-2,.cls-7{stroke-linecap:round;stroke-linejoin:round;fill-rule:evenodd}.cls-2{opacity:.5}.cls-7{stroke:#fff;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="ico_main_travel" transform="translate(45.881 -1017.717)">
+        <g id="g12825" transform="translate(5.119 1026.718)">
+            <path id="path12703" fill="#0c399f" d="M-504 1266.894c0 35.9 27.9 65 62.317 65s62.316-29.1 62.316-65" opacity="0.41" transform="translate(514.172 -1198.42)"/>
+            <g id="그룹_313" transform="translate(18.519 0)">
+                <path id="path12715" d="M-488.541 1268.307l9.175-8.259" class="cls-2" transform="translate(565.432 -1243.709)"/>
+                <path id="path12707" d="M-493 1269.745V1257.4" class="cls-2" transform="translate(542.371 -1257.401)"/>
+                <path id="path12709" d="M-490.477 1264.651l2.589-5.6" class="cls-2" transform="translate(555.421 -1248.882)"/>
+                <path id="path12713" d="M-493.354 1264.651l-2.589-5.6" class="cls-2" transform="translate(527.151 -1248.882)"/>
+                <path id="path12717" d="M-489.771 1268.307l-9.174-8.259" class="cls-2" transform="translate(511.621 -1243.709)"/>
+                <path id="path12720" d="M-487.393 1265.11l5.753-2.235" class="cls-2" transform="translate(571.371 -1229.087)"/>
+                <path id="path12722" d="M-487 1265.431l12.344.068" class="cls-2" transform="translate(573.398 -1215.868)"/>
+                <path id="path12724" d="M-488.655 1265.4H-501" class="cls-2" transform="translate(501 -1216.029)"/>
+                <path id="path12726" d="M-493.787 1265.11l-5.753-2.235" class="cls-2" transform="translate(508.55 -1229.087)"/>
+            </g>
+            <ellipse id="타원_74" cx="27.849" cy="28.338" fill="url(#linear-gradient)" rx="27.849" ry="28.338" transform="translate(39.776 21.541)"/>
+            <path id="path12703-2" fill="#007fff" d="M-504 1266.894c0 39.2 30.4 70.977 67.891 70.977s67.891-31.777 67.891-70.977" transform="translate(504 -1208.304)"/>
+            <path id="path12703-3" fill="#007fff" d="M-504 1266.894c0 39.2 30.4 70.977 67.891 70.977s67.891-31.777 67.891-70.977" opacity="0.5" transform="translate(504 -1208.304)"/>
+            <g id="그룹_312" opacity="0.539" transform="translate(10.173 73.978)">
+                <path id="path12736" d="M941.3 1361.362H995" class="cls-7" transform="translate(-941.3 -1361.362)"/>
+                <path id="path12740" d="M712.492 1031.872h27.6" class="cls-7" transform="translate(-624.784 -1031.863)"/>
+                <path id="path12742" d="M-491.738 1269.862h12.344" class="cls-7" transform="translate(556.266 -1269.862)"/>
+                <path id="path12748" d="M712.4 1031.872h39.315" class="cls-7" transform="translate(-665.428 -1019.521)"/>
+                <path id="path12750" d="M-479.155 1271.862h-7.083" class="cls-7" transform="translate(584.712 -1259.518)"/>
+                <path id="path12752" d="M-496.559 1271.862h-.056" class="cls-7" transform="translate(531.047 -1259.518)"/>
+                <path id="path12755" d="M-488.152 1271.862h-12.458" class="cls-7" transform="translate(510.38 -1259.518)"/>
+                <path id="path12796" d="M560.386 811.685h30.925" class="cls-7" transform="translate(-512.971 -787.013)"/>
+                <path id="path12798" d="M-482.49 1275.862h-7.083" class="cls-7" transform="translate(567.461 -1238.829)"/>
+                <path id="path12800" d="M-497.328 1275.862h-.164" class="cls-7" transform="translate(526.503 -1238.829)"/>
+                <path id="path12802" d="M-486.035 1273.862h-12.458" class="cls-7" transform="translate(521.331 -1249.173)"/>
+                <path id="path12819" d="M-475.329 1273.862h-12.155" class="cls-7" transform="translate(578.265 -1249.173)"/>
+                <path id="path12821" d="M-483.035 1275.862h-12.458" class="cls-7" transform="translate(536.848 -1238.829)"/>
+                <path id="path12823" d="M-491.37 1275.862h-.164" class="cls-7" transform="translate(557.323 -1238.829)"/>
+            </g>
+        </g>
+        <path id="area" fill="none" d="M0 0H240V200H0z" transform="translate(-45.881 1017.717)"/>
+    </g>
+</svg>

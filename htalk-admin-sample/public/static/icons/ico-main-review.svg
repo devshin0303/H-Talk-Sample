@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="200" viewBox="0 0 240 200">
+    <defs>
+        <filter id="다각형_2" width="32" height="32" x="61.605" y="45" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="1"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="다각형_3" width="32" height="32" x="89.605" y="45" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-2" stdDeviation="1"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="다각형_4" width="32" height="32" x="117.605" y="45" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-3" stdDeviation="1"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-6{fill:#fb0}
+        </style>
+    </defs>
+    <g id="ico_main_review" transform="translate(62.264 20.412)">
+        <path id="area" fill="none" d="M0 0H240V200H0z" transform="translate(-62.264 -20.412)"/>
+        <g id="그룹_47461" transform="translate(24303.236 23190.588)">
+            <path id="합치기_27" fill="#00358b" d="M114.862 89H49.4a10 10 0 0 1-10-10v-9H29.046l-15.82 15.257V70H10A10 10 0 0 1 0 60V10A10 10 0 0 1 10 0h93.023a10 10 0 0 1 10 10v9h16.96a10 10 0 0 1 10 10v50a10 10 0 0 1-10 10h-2.851v11.832z" opacity="0.336" transform="translate(-24317.982 -23164.834)"/>
+            <path id="합치기_29" fill="#5d9bff" d="M48.273 75H-14.5a10 10 0 0 1-10-10V15a10 10 0 0 1 10-10h77a10 10 0 0 1 10 10v50a10 10 0 0 1-10 10h-2.393v11.833z" transform="translate(-24250.5 -23164)"/>
+            <path id="합치기_28" fill="#e6f0ff" d="M13.644 78.082H10a10 10 0 0 1-10-10V10A10 10 0 0 1 10 0h96.588a10 10 0 0 1 10 10v58.082a10 10 0 0 1-10 10H29.963L13.644 94.4z" transform="translate(-24317.982 -23187.145)"/>
+            <path id="교차_1" fill="#5d9aff" d="M38 78.159V29a10 10 0 0 1 10-10h69.6v49.158a10 10 0 0 1-10 10z" opacity="0.3" transform="translate(-24313.895 -23178)"/>
+            <g id="그룹_47462">
+                <g filter="url(#다각형_2)" transform="matrix(1, 0, 0, 1, -24365.5, -23211)">
+                    <path id="다각형_2-2" d="M12.065 2.477a1 1 0 0 1 1.871 0l2.347 6.215a1 1 0 0 0 .868.644l6.436.433a1 1 0 0 1 .59 1.752l-5.039 4.393a1 1 0 0 0-.315.99l1.607 6.61a1 1 0 0 1-1.53 1.068l-5.35-3.561a1 1 0 0 0-1.108 0L7.1 24.582a1 1 0 0 1-1.53-1.069L7.177 16.9a1 1 0 0 0-.315-.99l-5.039-4.39a1 1 0 0 1 .59-1.752l6.436-.433a1 1 0 0 0 .868-.644z" class="cls-6" transform="translate(64.61 48)"/>
+                </g>
+                <g filter="url(#다각형_3)" transform="matrix(1, 0, 0, 1, -24365.5, -23211)">
+                    <path id="다각형_3-2" d="M12.065 2.477a1 1 0 0 1 1.871 0l2.347 6.215a1 1 0 0 0 .868.644l6.436.433a1 1 0 0 1 .59 1.752l-5.039 4.393a1 1 0 0 0-.315.99l1.607 6.61a1 1 0 0 1-1.53 1.068l-5.35-3.561a1 1 0 0 0-1.108 0L7.1 24.582a1 1 0 0 1-1.53-1.069L7.177 16.9a1 1 0 0 0-.315-.99l-5.039-4.39a1 1 0 0 1 .59-1.752l6.436-.433a1 1 0 0 0 .868-.644z" class="cls-6" transform="translate(92.61 48)"/>
+                </g>
+                <g filter="url(#다각형_4)" transform="matrix(1, 0, 0, 1, -24365.5, -23211)">
+                    <path id="다각형_4-2" d="M12.065 2.477a1 1 0 0 1 1.871 0l2.347 6.215a1 1 0 0 0 .868.644l6.436.433a1 1 0 0 1 .59 1.752l-5.039 4.393a1 1 0 0 0-.315.99l1.607 6.61a1 1 0 0 1-1.53 1.068l-5.35-3.561a1 1 0 0 0-1.108 0L7.1 24.582a1 1 0 0 1-1.53-1.069L7.177 16.9a1 1 0 0 0-.315-.99l-5.039-4.39a1 1 0 0 1 .59-1.752l6.436-.433a1 1 0 0 0 .868-.644z" class="cls-6" transform="translate(120.61 48)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

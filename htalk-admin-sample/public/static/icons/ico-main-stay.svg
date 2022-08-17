@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="200" viewBox="0 0 240 200">
+    <defs>
+        <linearGradient id="linear-gradient" x2="1" y1="-11.028" y2="-11.028" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-opacity="0"/>
+            <stop offset="1"/>
+        </linearGradient>
+        <style>
+            .cls-6{fill:#ac4c0a}.cls-7{fill:#fff}
+        </style>
+    </defs>
+    <g id="ico_main_stay" transform="translate(66.957 20.412)">
+        <path id="패스_194" d="M36.428 173.3L29.4 240.294h104.084l-7.027-66.994z" opacity="0.37" transform="translate(-29.4 -121.099)"/>
+        <path id="사각형_65" fill="#dbad8d" d="M10 0h70.029a10 10 0 0 1 10 10v29.663H0V10A10 10 0 0 1 10 0z" transform="translate(7.028 0)"/>
+        <path id="사각형_66" fill="#009e87" d="M0 0h104.084v11.064a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V0z" opacity="0.8" transform="translate(0 87.824)"/>
+        <path id="사각형_67" fill="url(#linear-gradient)" d="M0 0h104.084v11.064a6 6 0 0 1-6 6H6a6 6 0 0 1-6-6V0z" opacity="0.3" transform="translate(0 87.824)"/>
+        <path id="패스_189" fill="#00c9b5" d="M36.428 173.3L29.4 221.484h104.084l-7.027-48.184z" transform="translate(-29.359 -133.66)"/>
+        <g id="그룹_90" transform="translate(7.67 104.888)">
+            <path id="패스_190" d="M65.786 469.779a2.98 2.98 0 0 1-2.986-2.986V457.4h5.971v9.393a2.98 2.98 0 0 1-2.985 2.986z" class="cls-6" transform="translate(-62.8 -457.4)"/>
+            <path id="패스_191" d="M426.186 469.779a2.98 2.98 0 0 1-2.986-2.986V457.4h5.971v9.393a2.98 2.98 0 0 1-2.985 2.986z" class="cls-6" transform="translate(-340.428 -457.4)"/>
+        </g>
+        <g id="배게" transform="translate(15.457 29.879)">
+            <path id="패스_192" d="M126.442 151.194H99a2.3 2.3 0 0 1-2.3-2.3V133.1a2.3 2.3 0 0 1 2.3-2.3h27.445a2.3 2.3 0 0 1 2.3 2.3v15.8a2.289 2.289 0 0 1-2.303 2.294z" class="cls-7" transform="translate(-96.7 -130.8)"/>
+            <path id="패스_193" d="M305.542 151.194H278.1a2.3 2.3 0 0 1-2.3-2.3V133.1a2.3 2.3 0 0 1 2.3-2.3h27.445a2.3 2.3 0 0 1 2.3 2.3v15.8a2.289 2.289 0 0 1-2.303 2.294z" class="cls-7" transform="translate(-234.667 -130.8)"/>
+        </g>
+        <path id="area" fill="none" d="M0 0H240V200H0z" transform="translate(-66.957 -20.412)"/>
+    </g>
+</svg>
