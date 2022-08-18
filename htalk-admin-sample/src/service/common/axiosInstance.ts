@@ -17,6 +17,7 @@ export const service = {
         throw error.response.data
       })
   },
+  // 글로벌 axios 기본설정
   init() {
     axios.defaults.baseURL = 'https://htalk-api.helixtech.co.kr'
     axios.defaults.headers.common['App-Agent'] = 'AppVersion:1.0.0;DeviceType:PC;DeviceAuthType:WEB'

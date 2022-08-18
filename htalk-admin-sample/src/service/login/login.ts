@@ -20,7 +20,10 @@ export interface CertConfirmResponse {
 }
 
 //로그인
-export interface LoginRequest extends CertPwRequest {
+export interface LoginRequest {
+  certType: CertType
+  email: string
+  password: string
   certId: string
 }
 

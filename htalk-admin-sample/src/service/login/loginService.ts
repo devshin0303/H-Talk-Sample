@@ -1,4 +1,4 @@
-import {service} from '../common/server'
+import {service} from '../common/axiosInstance'
 import {CertConfirmResponse, CertPwConfirm, CertPwRequest, LoginRequest, LoginResponse} from './login'
 
 const BASEURL = '/auth/v1'
