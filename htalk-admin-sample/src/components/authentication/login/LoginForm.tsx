@@ -1,10 +1,13 @@
 import {Box, Button, Stack, TextField, Typography} from '@mui/material'
 import {useForm, Controller, Control, FieldPath} from 'react-hook-form'
+import {yupResolver} from '@hookform/resolvers/yup'
 import React, {useCallback, useState} from 'react'
 import {useMutation} from 'react-query'
-import {loginService} from '../../../service/login/loginService'
+import {login} from '../../../service/login/loginService'
 import {HError} from '../../../service/common/types'
 import {LoginRequest, CertPwRequest, CertPwConfirm} from '../../../service/login/login'
+import {useStore} from '../../../store/store'
+import * as Yup from 'yup'
 
 interface LoginFormValues {
   email: string
@@ -20,6 +23,7 @@ interface LoginFieldProps {
   type?: string
 }
 
+//로그인 필드 컴포넌트로 분리
 function LoginField({control, name, label, placeHolder, type}: LoginFieldProps) {
   return (
     <Box>
@@ -27,6 +31,7 @@ function LoginField({control, name, label, placeHolder, type}: LoginFieldProps) 
       <Controller
         name={name}
         control={control}
+        defaultValue=''
         render={({field}) => (
           <TextField {...field} size='small' required fullWidth type={type} placeholder={placeHolder} />
         )}
@@ -36,6 +41,16 @@ function LoginField({control, name, label, placeHolder, type}: LoginFieldProps) 
 }
 
 export default function LoginForm() {
+  const {saveToken} = useStore()
+
+  //loginField Value Validation Check
+  const loginValidationSchema = Yup.object({
+    email: Yup.string().email().required('이메일을 입력해주세요.'),
+    password: Yup.string().required('비밀번호를 입력해주세요.'),
+    certNumber: Yup.string().required('인증번호를 입력해주세요'),
+  })
+
+  //인증번호 입력필드 유무를 위한 state
   const [isCertNumberField, setIsCertNumberField] = useState<boolean>(false)
 
   const {control, handleSubmit} = useForm<LoginFormValues>({
@@ -44,9 +59,11 @@ export default function LoginForm() {
       password: '',
       certNumber: undefined,
     },
+    resolver: yupResolver(loginValidationSchema),
   })
 
-  const cert = useMutation(loginService.certPw, {
+  //인증번호 요청
+  const cert = useMutation(login.certPw, {
     onSuccess: () => {
       window.alert('인증번호를 요청했습니다.')
     },
@@ -55,16 +72,21 @@ export default function LoginForm() {
     },
   })
 
-  const loginPw = useMutation(loginService.loginPw, {
+  //로그인
+  const loginPw = useMutation(login.loginPw, {
     onSuccess: (res) => {
+      window.alert('로그인에 성공하였습니다.')
       console.log('로그인 성공', res)
+      const {token} = res
+      saveToken(token)
     },
     onError: (error: HError) => {
       window.Error(error.message)
     },
   })
 
-  const certConfirm = useMutation(loginService.certConfirmPw, {
+  //인증번호 확인
+  const certConfirm = useMutation(login.certConfirmPw, {
     onSuccess: (res, req) => {
       const loginRequest: LoginRequest = {
         certType: 'LOGIN',

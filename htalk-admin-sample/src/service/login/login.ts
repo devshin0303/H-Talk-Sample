@@ -28,9 +28,9 @@ export interface LoginRequest {
 }
 
 export interface Token {
-  accessToken: 'string'
-  refreshToken: 'string'
-  expiresIn: 'string'
+  accessToken?: string
+  refreshToken?: string
+  expiresIn?: string
 }
 
 export interface VoipActivation {

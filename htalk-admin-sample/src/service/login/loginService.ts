@@ -1,7 +1,8 @@
+import axios from 'axios'
 import {service} from '../common/axiosInstance'
 import {CertConfirmResponse, CertPwConfirm, CertPwRequest, LoginRequest, LoginResponse} from './login'
 
-const BASEURL = '/auth/v1'
+const AUTH_URL = '/auth/v1'
 
 export interface LoginService {
   certPw(request: CertPwRequest): Promise<void>
@@ -11,12 +12,33 @@ export interface LoginService {
 
 export const loginService: LoginService = {
   certPw(request: CertPwRequest): Promise<void> {
-    return service.post(`${BASEURL}/cert/pw`, request)
+    return service.post(`${AUTH_URL}/cert/pw`, request)
   },
   certConfirmPw(request: CertPwConfirm): Promise<CertConfirmResponse> {
-    return service.post(`${BASEURL}/cert/confirm/pw`, request)
+    return service.post(`${AUTH_URL}/cert/confirm/pw`, request)
   },
   loginPw(request: LoginRequest): Promise<LoginResponse> {
-    return service.post(`${BASEURL}/login/pw`, request)
+    return service.post(`${AUTH_URL}/login/pw`, request)
+  },
+}
+
+export const login: LoginService = {
+  certPw(request: CertPwRequest): Promise<void> {
+    return axios
+      .post(`${AUTH_URL}/cert/pw`, request)
+      .then((res) => res.data)
+      .catch((error) => error.response.data)
+  },
+  certConfirmPw(request: CertPwConfirm): Promise<CertConfirmResponse> {
+    return axios
+      .post(`${AUTH_URL}/cert/confirm/pw`, request)
+      .then((res) => res.data)
+      .catch((error) => error.response.data)
+  },
+  loginPw(request: LoginRequest): Promise<LoginResponse> {
+    return axios
+      .post(`${AUTH_URL}/login/pw`, request)
+      .then((res) => res.data)
+      .catch((error) => error.response.data)
   },
 }
