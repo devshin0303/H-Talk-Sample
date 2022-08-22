@@ -7,7 +7,7 @@ const routes: RouteObject[] = [
   {
     path: '/',
     element: <BlankLayout />,
-    children: [{path: 'login', element: <Login />}],
+    children: [{path: '/', element: <Login />}],
   },
 ]
 

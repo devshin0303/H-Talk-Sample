@@ -1,6 +1,7 @@
 import {Box, Button, Stack, TextField, Typography} from '@mui/material'
 import {useForm, Controller, Control, FieldPath} from 'react-hook-form'
 import {yupResolver} from '@hookform/resolvers/yup'
+import {toast} from 'react-toastify'
 import React, {useCallback, useState} from 'react'
 import {useMutation} from 'react-query'
 import {login} from '../../../service/login/loginService'
@@ -33,7 +34,7 @@ function LoginField({control, name, label, placeHolder, type}: LoginFieldProps) 
         control={control}
         defaultValue=''
         render={({field}) => (
-          <TextField {...field} size='small' required fullWidth type={type} placeholder={placeHolder} />
+          <TextField {...field} required size='small' fullWidth type={type} placeholder={placeHolder} />
         )}
       />
     </Box>
@@ -44,10 +45,10 @@ export default function LoginForm() {
   const {saveToken} = useStore()
 
   //loginField Value Validation Check
-  const loginValidationSchema = Yup.object({
+  const loginSchema = Yup.object({
     email: Yup.string().email().required('이메일을 입력해주세요.'),
     password: Yup.string().required('비밀번호를 입력해주세요.'),
-    certNumber: Yup.string().required('인증번호를 입력해주세요'),
+    certNumber: Yup.string().min(6, '인증번호는 6자리 입니다.'),
   })
 
   //인증번호 입력필드 유무를 위한 state
@@ -59,12 +60,13 @@ export default function LoginForm() {
       password: '',
       certNumber: undefined,
     },
-    resolver: yupResolver(loginValidationSchema),
+    resolver: yupResolver(loginSchema),
   })
 
   //인증번호 요청
   const cert = useMutation(login.certPw, {
     onSuccess: () => {
+      // toast.success('인증번호를 요청했습니다.')
       window.alert('인증번호를 요청했습니다.')
     },
     onError: (error: HError) => {

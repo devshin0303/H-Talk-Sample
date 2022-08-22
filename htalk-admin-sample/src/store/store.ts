@@ -20,7 +20,7 @@ export const useStore = create<RootState>()(
       }
     ),
     {
-      anonymousActionType: 'saveToken',
+      anonymousActionType: 'TokenState',
     }
   )
 )
