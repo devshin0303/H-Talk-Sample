@@ -2,12 +2,16 @@ import React from 'react'
 import {RouteObject, useRoutes} from 'react-router-dom'
 import BlankLayout from './layout/BlankLayout'
 import Login from './pages/Login'
+import MainPage from './pages/main/MainPage'
 
 const routes: RouteObject[] = [
   {
     path: '/',
     element: <BlankLayout />,
-    children: [{path: '/', element: <Login />}],
+    children: [
+      {path: '/', element: <Login />},
+      {path: '/main', element: <MainPage />},
+    ],
   },
 ]
 

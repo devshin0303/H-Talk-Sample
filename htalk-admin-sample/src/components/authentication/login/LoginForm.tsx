@@ -66,7 +66,7 @@ export default function LoginForm() {
   //인증번호 요청
   const cert = useMutation(login.certPw, {
     onSuccess: () => {
-      // toast.success('인증번호를 요청했습니다.')
+      toast.success('인증번호를 요청했습니다.')
       window.alert('인증번호를 요청했습니다.')
     },
     onError: (error: HError) => {
