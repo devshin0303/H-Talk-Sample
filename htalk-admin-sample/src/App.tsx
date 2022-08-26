@@ -9,10 +9,9 @@ const queryClient = new QueryClient({defaultOptions: {queries: {staleTime: 10000
 function App() {
   return (
     <>
-      <CssBaseline />
       <QueryClientProvider client={queryClient}>
+        <CssBaseline />
         <Router />
-        <ToastContainer />
       </QueryClientProvider>
     </>
   )

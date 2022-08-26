@@ -9,6 +9,7 @@ import {HError} from '../../../service/common/types'
 import {LoginRequest, CertPwRequest, CertPwConfirm} from '../../../service/login/login'
 import {useStore} from '../../../store/store'
 import * as Yup from 'yup'
+import {useLocation, useNavigate} from 'react-router-dom'
 
 interface LoginFormValues {
   email: string
@@ -42,6 +43,8 @@ function LoginField({control, name, label, placeHolder, type}: LoginFieldProps) 
 }
 
 export default function LoginForm() {
+  const location = useLocation()
+  const navigate = useNavigate()
   const {saveToken} = useStore()
 
   //loginField Value Validation Check
@@ -66,7 +69,6 @@ export default function LoginForm() {
   //인증번호 요청
   const cert = useMutation(login.certPw, {
     onSuccess: () => {
-      toast.success('인증번호를 요청했습니다.')
       window.alert('인증번호를 요청했습니다.')
     },
     onError: (error: HError) => {
@@ -97,6 +99,7 @@ export default function LoginForm() {
         password: req.password,
       }
       loginPw.mutate(loginRequest)
+      navigate('../main', {replace: false})
     },
     onError: (error: HError) => {
       console.log(error.message)
@@ -133,6 +136,11 @@ export default function LoginForm() {
     <form onSubmit={handleSubmit(onSubmit)}>
       <Stack spacing={2}>
         <LoginField control={control} name='email' placeHolder='이메일을 입력해주세요' label='이메일' type='email' />
+        {/* <Controller
+          control={control}
+          name='email'
+          render={({field}) => <TextField {...field} placeholder='이메일을 입력해주세요.' />}
+        /> */}
         <LoginField
           control={control}
           name='password'
